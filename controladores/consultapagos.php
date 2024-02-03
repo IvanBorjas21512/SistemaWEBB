@@ -19,7 +19,7 @@ switch ($_GET["op"]){
 				"3"=>$reg->monto,
  				"4"=>$reg->fpago,
  				"5"=>($reg->estado)==0?'<span class="badge badge-pill badge-danger">Sin factura</span>':($reg->estado==1?'<span class="badge badge-pill badge-info">Factura registrada</span>':'<span class="badge badge-pill badge-success">Factura pagada</span>'),
-               	"6"=>($reg->estado)==0?'<button title="Visualizar factura" class="btn btn-info btn-circle btn-sm" onclick="mostrarConsulta('.$reg->idpago.')"> <i class="far fa-eye"></i></button>':'<button title="Visualizar factura" class="btn btn-info btn-circle btn-sm" onclick="mostrarConsulta('.$reg->idpago.')"><i class="far fa-eye"></i></button>'.' <a href="../controladores/download.php?factura='.$reg->documento.'"><button title="Descargar factura" class="btn btn-info btn-circle btn-sm"> <i class="fas fa-download"> </i></button></a>'
+               	"6"=>($reg->estado)==0?'<button title="Visualizar factura" class="btn btn-info btn-circle btn-sm" onclick="mostrarConsulta('.$reg->idpago.')"> <i class="far fa-eye"></i></button>':'<button title="Visualizar factura" class="btn btn-info btn-circle btn-sm" onclick="mostrarConsulta('.$reg->idpago.')"><i class="far fa-eye"></i></button>'.' <a href="../controladores/download.php?factura='.$reg->documento.'"> </i></button></a>'
 			);
  		}
  		$results = array(
