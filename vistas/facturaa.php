@@ -158,12 +158,6 @@ $pdf->MultiCell(0,9,iconv("UTF-8", "ISO-8859-1","*** Gracias por su preferencia 
 
 
 
-
-# Nombre del archivo PDF #
-$pdf->Output("I","Factura_Nro_001.pdf",true);
-
-require 'noacceso.php';
-
 require 'footer.php';
 
 ob_end_flush();
