@@ -107,7 +107,7 @@ if ($_SESSION['Consultas']==1)
                         <div class="row">
                             <div class="form-group col-xs-12">
                                 <button title="Regresar a consultas" class="btn btn-info btn-block" type="button" id="btnregresar"><i class="far fa-arrow-alt-circle-left"></i> Volver al menú anterior</button>
-				<a class="btn btn-danger float-right" style="margin-top:30px" target="_blank" href="facturaa.php?invoice_id=<?php echo $mostrarConsulta['idpago']; ?>" role="button">Imprimir Factura</a>
+				<a class="btn btn-danger float-right" style="margin-top:30px" target="_blank" href="facturaa.php?idorden=<?php echo $row['idorden']; ?>&razonSocial=<?php echo urlencode($row['razonSocial']); ?>&representante=<?php echo urlencode($row['representante']); ?>&ruc=<?php echo urlencode($row['ruc']); ?>&direccion=<?php echo urlencode($row['direccion']); ?>&telefono=<?php echo urlencode($row['telefono']); ?>&email=<?php echo urlencode($row['email']); ?>&descripcion=<?php echo urlencode($row['descripcion']); ?>&costo=<?php echo urlencode($row['costo']); ?>&fechaInicio=<?php echo urlencode($row['fechaInicio']); ?>&fechaFinal=<?php echo urlencode($row['fechaFinal']); ?>" role="button">Imprimir Factura</a>
                                  <!--idpagos php echo $idpagos-->  
                             </div>
                         </div>
