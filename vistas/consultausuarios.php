@@ -90,7 +90,7 @@ if ($_SESSION['Consultas']==1)
                         </div>
                     </form>
                 </div>
-
+                <a class="btn btn-danger float-right" style="margin-top:30px" target="_blank" href="usuariosPDF.php" role="button">Imprimir</a>
             </div>
         </div>
     </div>
